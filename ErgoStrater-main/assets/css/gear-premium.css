@@ -92,3 +92,196 @@
         height: 220px;
     }
 }
+
+/* PREMIUM FINISH — GEAR PAGE */
+
+.gear-grid .gear-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.gear-grid .gear-card:hover {
+    transform: translateY(-7px);
+    border-color: #cbd9cc;
+    box-shadow: 0 18px 38px rgba(25, 50, 35, 0.13);
+}
+
+.gear-grid .gear-image {
+    position: relative;
+    height: 230px;
+    background: #edf1eb;
+}
+
+.gear-grid .gear-image img {
+    transition: transform .55s cubic-bezier(.2, .7, .2, 1);
+}
+
+.gear-grid .gear-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.gear-grid .gear-content h3 {
+    font-size: 21px;
+    letter-spacing: -0.4px;
+}
+
+.gear-grid .gear-content p {
+    line-height: 1.75;
+}
+
+.gear-grid .gear-price {
+    margin-top: auto;
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+.gear-grid .gear-link {
+    align-self: flex-start;
+    margin-top: 16px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #9db6a3;
+    transition: color .2s ease, border-color .2s ease;
+}
+
+.gear-grid .gear-link:hover {
+    color: #38765c;
+    border-color: #38765c;
+}
+
+.gear-grid .gear-card:focus-within {
+    outline: 3px solid #9db6a3;
+    outline-offset: 4px;
+}
+
+@media (max-width: 580px) {
+    .gear-grid {
+        gap: 20px;
+    }
+
+    .gear-grid .gear-image {
+        height: 215px;
+    }
+
+    .gear-grid .gear-content {
+        padding: 21px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gear-grid .gear-card,
+    .gear-grid .gear-image img,
+    .gear-grid .gear-link {
+        transition: none;
+    }
+}
+
+
+/* GEAR PAGE — PREMIUM BUDGET BANDS */
+
+.budget-bands .value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 34px;
+    align-items: stretch;
+}
+
+.budget-bands .value-card {
+    height: 100%;
+    padding: 26px 22px;
+    background: #fff;
+    border: 1px solid #e7ebe5;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(25, 50, 35, 0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.budget-bands .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(25, 50, 35, 0.10);
+}
+
+.budget-bands .value-card .eyebrow {
+    color: #38765c;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.budget-bands .value-card h3 {
+    color: #172b22;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 18px 0 12px;
+}
+
+.budget-bands .value-card p {
+    color: #777d75;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+@media (max-width: 950px) {
+    .budget-bands .value-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 580px) {
+    .budget-bands .value-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+
+/* GEAR PAGE — UPGRADE ORDER */
+
+.gear-page .article-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.gear-page .article-tip {
+    padding: 28px 24px;
+    background: #fff;
+    border: 1px solid #e7ebe5;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(25, 50, 35, 0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gear-page .article-tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(25, 50, 35, 0.10);
+}
+
+.gear-page .article-tip strong {
+    display: block;
+    color: #254c3b;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.gear-page .article-tip p {
+    color: #777d75;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    .gear-page .article-list {
+        grid-template-columns: 1fr;
+    }
+}
+

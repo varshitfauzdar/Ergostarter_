@@ -1,58 +1,171 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Page Not Found | ErgoStarter</title>
+    <title>404 - Page Not Found | ErgoStarter</title>
 
     <meta name="robots" content="noindex, follow">
-    <meta name="description" content="The page you're looking for could not be found on ErgoStarter.">
+    <meta name="description" content="The page you're looking for could not be found. Explore ergonomic workspace guides and budget-friendly desk setup recommendations on ErgoStarter.">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/layout-refinement.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KK4GDS9F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ErgoStarter">
+    <meta property="og:title" content="Page Not Found | ErgoStarter">
+    <meta property="og:description" content="Explore practical ergonomic workspace guides and budget-friendly desk setup ideas.">
+    <meta property="og:url" content="https://ergostarter.pro/404.html">
 
-<!-- OpenGraph Metadata -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="ErgoStarter" />
-<meta property="og:title" content="ErgoStarter: Budget Ergonomic Desk Setups in India" />
-<meta property="og:description" content="Practical posture fixes, DIY workspace improvements, and budget ergonomic desk gear under ₹5,000 for Indian students and WFH beginners." />
-<meta property="og:url" content="https://ergostarter.pro/" />
+    <style>
+        .error-page {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 24px;
+            background: #f7f6f0;
+            text-align: center;
+        }
 
-<!-- JSON-LD Structured Data (Organization & WebSite) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://ergostarter.pro/#organization",
-      "name": "ErgoStarter",
-      "url": "https://ergostarter.pro/",
-      "description": "Budget ergonomic workspace design and posture optimization guides for Indian students and remote workers."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://ergostarter.pro/#website",
-      "url": "https://ergostarter.pro/",
-      "name": "ErgoStarter",
-      "publisher": {
-        "@id": "https://ergostarter.pro/#organization"
-      }
-    }
-  ]
-}
-</script>
-<link rel="stylesheet" href="assets/css/layout-refinement.css">
+        .error-content {
+            width: 100%;
+            max-width: 680px;
+            margin: auto;
+        }
+
+        .error-code {
+            margin: 0 0 8px;
+            color: #254c3b;
+            font-family: Georgia, serif;
+            font-size: clamp(100px, 20vw, 190px);
+            font-weight: 700;
+            line-height: 0.95;
+            letter-spacing: -10px;
+        }
+
+        .error-label {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 9px 16px;
+            border-radius: 50px;
+            background: #dce6d8;
+            color: #254c3b;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .error-content h1 {
+            margin: 12px 0 16px;
+            color: #172b22;
+            font-family: Georgia, serif;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.15;
+        }
+
+        .error-description {
+            max-width: 500px;
+            margin: 0 auto;
+            color: #777d75;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .error-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 14px 24px;
+            border: 1px solid #254c3b;
+            border-radius: 50px;
+            background: #254c3b;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .error-button:hover {
+            background: #172b22;
+            transform: translateY(-2px);
+        }
+
+        .error-button.secondary {
+            background: transparent;
+            color: #254c3b;
+        }
+
+        .error-button.secondary:hover {
+            background: #dce6d8;
+        }
+
+        .error-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 42px;
+        }
+
+        .error-links a {
+            color: #254c3b;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .error-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .error-page {
+                min-height: 65vh;
+                padding: 65px 20px;
+            }
+
+            .error-code {
+                letter-spacing: -6px;
+            }
+
+            .error-description {
+                font-size: 15px;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-button {
+                width: 100%;
+            }
+
+            .error-links {
+                gap: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .error-button {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -60,20 +173,35 @@
     <div id="site-header"></div>
 
     <main>
-        <section class="section">
-            <div class="container" style="text-align: center; padding: 80px 20px;">
+        <section class="error-page">
+            <div class="error-content">
 
-                <h1>404 — Page Not Found</h1>
+                <p class="error-code" aria-hidden="true">404</p>
 
-                <p>
-                    Sorry, we couldn't find the page you're looking for.
+                <span class="error-label">Page Not Found</span>
+
+                <h1>Looks like you've lost your way.</h1>
+
+                <p class="error-description">
+                    The page you're looking for may have moved, been removed,
+                    or never existed. Don't worry — let's help you find your
+                    way back to a better workspace.
                 </p>
 
-                <p>
-                    <a href="/" class="btn btn-primary">
-                        Back to ErgoStarter
+                <div class="error-actions">
+                    <a href="/" class="error-button">
+                        Back to Homepage &rarr;
                     </a>
-                </p>
+
+                    <a href="/guides/" class="error-button secondary">
+                        Explore Guides
+                    </a>
+                </div>
+
+                <nav class="error-links" aria-label="Helpful pages">
+                    <a href="/gear/">Browse Budget Gear</a>
+                    <a href="/about/">About ErgoStarter</a>
+                </nav>
 
             </div>
         </section>

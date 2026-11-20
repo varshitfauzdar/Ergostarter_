@@ -1,148 +1,354 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About ErgoStarter | Affordable Ergonomic Desk Setups</title>
+    <title>About ErgoStarter | Our Mission & Approach</title>
 
-    <meta
-        name="description"
-        content="Learn about ErgoStarter and our mission to help students, interns, and beginner remote workers in India create affordable ergonomic desk setups."
-    >
+    <meta name="description" content="Discover ErgoStarter's mission to help students, interns, and remote workers build comfortable and affordable ergonomic workspaces in India.">
 
     <link rel="canonical" href="https://ergostarter.pro/about/">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/layout-refinement.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KK4GDS9F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ErgoStarter">
+    <meta property="og:title" content="About ErgoStarter | Our Mission & Approach">
+    <meta property="og:description" content="We make ergonomic workspace knowledge practical and accessible for students, interns, and beginner remote workers.">
+    <meta property="og:url" content="https://ergostarter.pro/about/">
 
-<!-- OpenGraph Metadata -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="ErgoStarter" />
-<meta property="og:title" content="ErgoStarter: Budget Ergonomic Desk Setups in India" />
-<meta property="og:description" content="Practical posture fixes, DIY workspace improvements, and budget ergonomic desk gear under ₹5,000 for Indian students and WFH beginners." />
-<meta property="og:url" content="https://ergostarter.pro/" />
+    <style>
+        .about-page {
+            background: #f7f6f0;
+            padding-bottom: 80px;
+        }
 
-<!-- JSON-LD Structured Data (Organization & WebSite) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://ergostarter.pro/#organization",
-      "name": "ErgoStarter",
-      "url": "https://ergostarter.pro/",
-      "description": "Budget ergonomic workspace design and posture optimization guides for Indian students and remote workers."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://ergostarter.pro/#website",
-      "url": "https://ergostarter.pro/",
-      "name": "ErgoStarter",
-      "publisher": {
-        "@id": "https://ergostarter.pro/#organization"
-      }
-    }
-  ]
-}
-</script>
-<link rel="stylesheet" href="../assets/css/layout-refinement.css">
+        .about-hero {
+            padding: clamp(75px, 10vw, 120px) 24px 85px;
+            text-align: center;
+        }
+
+        .about-hero-inner {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .about-eyebrow {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 50px;
+            background: #dce6d8;
+            color: #254c3b;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .about-hero h1 {
+            margin: 24px 0 20px;
+            color: #172b22;
+            font-family: Georgia, serif;
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .about-hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #777d75;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .about-section {
+            width: min(calc(100% - 48px), 1050px);
+            margin: 0 auto 30px;
+            padding: clamp(30px, 5vw, 55px);
+            border: 1px solid #e8e8df;
+            border-radius: 22px;
+            background: #fff;
+        }
+
+        .about-section h2 {
+            margin: 0 0 20px;
+            color: #172b22;
+            font-family: Georgia, serif;
+            font-size: clamp(27px, 4vw, 36px);
+        }
+
+        .about-section p {
+            color: #656e66;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .about-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-audience-grid,
+        .about-values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .about-card {
+            padding: 26px;
+            border: 1px solid #e8e8df;
+            border-radius: 16px;
+            background: #fafaf7;
+        }
+
+        .about-card .card-number {
+            display: block;
+            margin-bottom: 18px;
+            color: #78927e;
+            font-family: Georgia, serif;
+            font-size: 30px;
+        }
+
+        .about-card h3 {
+            margin: 0 0 10px;
+            color: #254c3b;
+            font-size: 18px;
+        }
+
+        .about-card p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .about-cta {
+            width: min(calc(100% - 48px), 1050px);
+            margin: 45px auto 0;
+            padding: clamp(35px, 6vw, 65px) 25px;
+            border-radius: 22px;
+            background: #254c3b;
+            text-align: center;
+        }
+
+        .about-cta h2 {
+            margin: 0 0 14px;
+            color: #fff;
+            font-family: Georgia, serif;
+            font-size: clamp(28px, 4vw, 40px);
+        }
+
+        .about-cta p {
+            max-width: 550px;
+            margin: 0 auto 25px;
+            color: #dce6d8;
+            line-height: 1.8;
+        }
+
+        .about-cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 25px;
+            border-radius: 50px;
+            background: #fff;
+            color: #254c3b;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .about-cta a:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 700px) {
+            .about-audience-grid,
+            .about-values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero {
+                padding-top: 65px;
+                padding-bottom: 55px;
+            }
+
+            .about-section {
+                width: calc(100% - 32px);
+                padding: 28px 22px;
+                margin-bottom: 18px;
+            }
+
+            .about-cta {
+                width: calc(100% - 32px);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .about-cta a {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="site-header"></div>
 
-    <main>
+    <main class="about-page">
 
-        <section class="section">
-            <div class="container">
+        <section class="about-hero">
+            <div class="about-hero-inner">
 
-                <div class="article-header">
+                <span class="about-eyebrow">ABOUT ERGOSTARTER</span>
 
-                    <p class="eyebrow">ABOUT ERGOSTARTER</p>
+                <h1>Better workspaces.<br>Within your budget.</h1>
 
-                    <h1>About ErgoStarter</h1>
-
-                    <p class="article-intro">
-                        Practical ergonomic desk advice for beginners
-                        working and studying from home on a budget.
-                    </p>
-
-                </div>
-
-                <div class="article-content">
-
-                    <h2>Our Mission</h2>
-
-                    <p>
-                        ErgoStarter was created to make ergonomic desk setups
-                        easier to understand and more affordable for beginners.
-                        A comfortable workspace does not have to require
-                        expensive furniture or complicated equipment.
-                    </p>
-
-                    <p>
-                        We focus on practical ways to improve your desk,
-                        laptop, monitor, chair, and workspace without
-                        unnecessarily increasing your budget.
-                    </p>
-
-                    <h2>Who Is ErgoStarter For?</h2>
-
-                    <p>
-                        Our content is primarily designed for students,
-                        interns, and entry-level remote workers in India who
-                        want to build a more comfortable and productive
-                        workspace.
-                    </p>
-
-                    <p>
-                        Whether you are working from a bedroom, studying at a
-                        small desk, or setting up your first remote workspace,
-                        our guides are designed to help you make sensible
-                        improvements one step at a time.
-                    </p>
-
-                    <h2>What We Cover</h2>
-
-                    <p>
-                        ErgoStarter covers budget-friendly ergonomic desk
-                        setups, workspace organization, monitor positioning,
-                        laptop setups, standing desk alternatives, cable
-                        management, office chairs, monitor arms, and other
-                        practical improvements for home workspaces.
-                    </p>
-
-                    <h2>Our Approach</h2>
-
-                    <p>
-                        We aim to keep our recommendations practical,
-                        beginner-friendly, and focused on value. We explain
-                        why a particular setup or improvement can be useful
-                        rather than assuming that everyone needs expensive
-                        equipment.
-                    </p>
-
-                    <p>
-                        Our goal is simple: help you create a workspace that
-                        is more comfortable, organized, and suitable for
-                        focused work without overspending.
-                    </p>
-
-                </div>
+                <p>
+                    We believe everyone deserves a comfortable place to work
+                    and study. ErgoStarter makes ergonomic workspace knowledge
+                    practical, accessible, and easier to understand.
+                </p>
 
             </div>
+        </section>
+
+        <section class="about-section">
+
+            <h2>Our Mission</h2>
+
+            <p>
+                ErgoStarter was created to make ergonomic desk setups easier
+                to understand and more affordable for beginners. A comfortable
+                workspace should not require expensive furniture or complicated
+                equipment.
+            </p>
+
+            <p>
+                We focus on practical ways to improve your desk, laptop,
+                monitor, chair, and workspace without unnecessarily increasing
+                your budget.
+            </p>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>Who We Help</h2>
+
+            <p>
+                Our resources are designed for people who want to improve
+                their everyday workspace, whether they are studying,
+                starting their career, or working remotely.
+            </p>
+
+            <div class="about-audience-grid">
+
+                <article class="about-card">
+                    <span class="card-number">01</span>
+                    <h3>Students</h3>
+                    <p>
+                        Create a more comfortable study environment using
+                        practical and affordable desk improvements.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <span class="card-number">02</span>
+                    <h3>Interns & Beginners</h3>
+                    <p>
+                        Build your first functional workspace without
+                        spending unnecessarily on expensive equipment.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <span class="card-number">03</span>
+                    <h3>Remote Workers</h3>
+                    <p>
+                        Make your home workspace more organized,
+                        comfortable, and suitable for focused work.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>What We Believe In</h2>
+
+            <div class="about-values-grid">
+
+                <article class="about-card">
+                    <span class="card-number">01</span>
+                    <h3>Practicality</h3>
+                    <p>
+                        Useful improvements that can fit into everyday
+                        work and study routines.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <span class="card-number">02</span>
+                    <h3>Affordability</h3>
+                    <p>
+                        Better workspace choices without assuming
+                        everyone has a large budget.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <span class="card-number">03</span>
+                    <h3>Simplicity</h3>
+                    <p>
+                        Clear explanations and beginner-friendly
+                        recommendations without unnecessary complexity.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="about-section">
+
+            <h2>What We Cover</h2>
+
+            <p>
+                ErgoStarter explores budget-friendly ergonomic desk setups,
+                workspace organization, monitor positioning, laptop setups,
+                standing desk alternatives, cable management, office chairs,
+                monitor arms, and other practical improvements for home
+                workspaces.
+            </p>
+
+            <p>
+                Our aim is to help readers understand why a particular
+                workspace improvement can be useful, so they can make
+                informed decisions based on their needs and budget.
+            </p>
+
+        </section>
+
+        <section class="about-cta">
+
+            <h2>Ready to improve your workspace?</h2>
+
+            <p>
+                Explore practical guides and discover simple ways to build
+                a more comfortable workspace.
+            </p>
+
+            <a href="/guides/">Explore Our Guides &rarr;</a>
+
         </section>
 
     </main>
