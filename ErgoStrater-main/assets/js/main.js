@@ -145,8 +145,16 @@ function renderFeaturedGear() {
         article.className = "gear-card";
         const image = document.createElement("div");
         image.className = "gear-card-image";
-        image.setAttribute("aria-hidden", "true");
-        image.textContent = "Budget Gear";
+
+        const imageElement = document.createElement("img");
+        imageElement.src = `assets/images/gear/${item.id}.webp`;
+        imageElement.alt = item.title;
+        imageElement.loading = "lazy";
+        imageElement.onerror = () => {
+            imageElement.style.display = "none";
+        };
+
+        image.appendChild(imageElement);
 
         const content = document.createElement("div");
         content.className = "gear-card-content";
