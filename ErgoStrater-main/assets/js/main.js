@@ -143,9 +143,6 @@ function renderFeaturedGear() {
     featuredGear.forEach((item) => {
         const article = document.createElement("article");
         article.className = "gear-card";
-
-        // Image placeholder for now.
-        // Actual product/illustration images can be added later.
         const image = document.createElement("div");
         image.className = "gear-card-image";
         image.setAttribute("aria-hidden", "true");

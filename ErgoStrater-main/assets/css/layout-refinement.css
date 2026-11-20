@@ -1,0 +1,530 @@
+﻿/* =========================================
+   ERGOSTARTER — GLOBAL LAYOUT REFINEMENT
+   ========================================= */
+
+/* Consistent page width */
+.container {
+    width: min(calc(100% - 64px), 1200px);
+    margin-inline: auto;
+}
+
+.content-container {
+    width: min(calc(100% - 64px), 850px);
+    margin-inline: auto;
+}
+
+/* Consistent section rhythm */
+.value-section,
+.guides-section,
+.gear-section,
+.article-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Section heading spacing */
+.section-header-row {
+    gap: 28px;
+    margin-bottom: 36px;
+}
+
+.section-heading h2 {
+    margin-bottom: 16px;
+}
+
+/* Consistent grid spacing */
+.value-grid,
+.guide-grid,
+.gear-grid {
+    column-gap: 24px;
+    row-gap: 28px;
+}
+
+/* Article readability */
+.article-section .content-container {
+    max-width: 780px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .container {
+        width: min(calc(100% - 48px), 1200px);
+    }
+
+    .content-container {
+        width: min(calc(100% - 48px), 850px);
+    }
+
+    .value-section,
+    .guides-section,
+    .gear-section,
+    .article-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .content-container {
+        width: calc(100% - 32px);
+    }
+
+    .value-section,
+    .guides-section,
+    .gear-section,
+    .article-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .section-header-row {
+        gap: 14px;
+        margin-bottom: 24px;
+    }
+
+    .value-grid,
+    .guide-grid,
+    .gear-grid {
+        row-gap: 20px;
+    }
+}
+
+/* =========================================
+   ERGOSTARTER — CONSISTENT SPACING SYSTEM
+   ========================================= */
+
+/* Desktop layout */
+@media (min-width: 901px) {
+    .hero {
+        padding-top: 76px;
+        padding-bottom: 76px;
+    }
+
+    .search-section {
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+
+    .value-section,
+    .guides-section,
+    .gear-section,
+    .setup-cta,
+    .newsletter-section,
+    .article-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .value-grid {
+        margin-top: 32px;
+    }
+
+    .section-header-row {
+        margin-bottom: 32px;
+    }
+}
+
+/* Tablet spacing */
+@media (min-width: 601px) and (max-width: 900px) {
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .value-section,
+    .guides-section,
+    .gear-section,
+    .setup-cta,
+    .newsletter-section,
+    .article-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 44px;
+        padding-bottom: 48px;
+    }
+
+    .value-section,
+    .guides-section,
+    .gear-section,
+    .setup-cta,
+    .newsletter-section,
+    .article-section {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    .search-section {
+        padding-bottom: 40px;
+    }
+
+    .section-header-row {
+        margin-bottom: 22px;
+    }
+
+    .value-grid {
+        margin-top: 24px;
+    }
+}
+
+/* =========================================
+   EDITORIAL / ABOUT PAGE LAYOUT
+   ========================================= */
+
+.article-header,
+.article-content {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-header {
+    padding: 28px 0 30px;
+}
+
+.article-header h1 {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.article-header .article-intro {
+    max-width: 720px;
+    line-height: 1.75;
+    font-size: 17px;
+}
+
+.article-content {
+    padding-top: 34px;
+    padding-bottom: 24px;
+}
+
+.article-content h2 {
+    margin-top: 38px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.article-content h2:first-child {
+    margin-top: 0;
+}
+
+.article-content p {
+    margin-bottom: 18px;
+    line-height: 1.85;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .article-header {
+        padding-top: 20px;
+        padding-bottom: 22px;
+    }
+
+    .article-header .article-intro {
+        font-size: 15px;
+    }
+
+    .article-content {
+        padding-top: 26px;
+        padding-bottom: 16px;
+    }
+
+    .article-content h2 {
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+
+    .article-content p {
+        line-height: 1.75;
+        margin-bottom: 15px;
+    }
+}
+
+/* =========================================
+   COMPLETE SETUP GUIDE — SPACING REFINEMENT
+   ========================================= */
+
+.article-page .article-header {
+    padding-top: 52px;
+    padding-bottom: 38px;
+}
+
+.article-page .article-header .content-container {
+    max-width: 850px;
+}
+
+.article-page .article-header h1 {
+    margin-top: 12px;
+    margin-bottom: 16px;
+    line-height: 1.12;
+}
+
+.article-page .article-intro {
+    max-width: 760px;
+    line-height: 1.75;
+}
+
+.article-page .article-meta {
+    margin-top: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.article-page .article-section {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.article-page .article-section .content-container {
+    max-width: 760px;
+}
+
+.article-page .article-section h2 {
+    margin-bottom: 16px;
+    line-height: 1.25;
+}
+
+.article-page .article-section p {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.article-page .article-highlight {
+    padding: 26px 30px;
+    border-radius: 14px;
+}
+
+.article-page .article-toc {
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.article-page .article-toc a {
+    padding: 11px 16px;
+    line-height: 1.5;
+}
+
+.article-page .article-tip {
+    margin-top: 18px;
+    padding: 16px 20px;
+    line-height: 1.7;
+}
+
+.article-page .article-section:last-of-type {
+    padding-bottom: 48px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .article-page .article-header {
+        padding-top: 34px;
+        padding-bottom: 28px;
+    }
+
+    .article-page .article-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .article-page .article-section .content-container {
+        max-width: 100%;
+    }
+
+    .article-page .article-highlight {
+        padding: 20px;
+    }
+
+    .article-page .article-toc a {
+        padding: 10px 12px;
+    }
+}
+
+/* =========================================
+   COMPLETE SETUP GUIDE — FINAL CTA
+   ========================================= */
+
+.article-page .article-cta {
+    padding: 64px 24px;
+    background: #172b22;
+    color: #ffffff;
+}
+
+.article-page .article-cta .content-container {
+    max-width: 760px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.article-page .article-cta h2 {
+    max-width: 680px;
+    margin: 0 auto 18px;
+    color: #ffffff;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.2;
+}
+
+.article-page .article-cta p {
+    max-width: 620px;
+    margin: 0 auto 26px;
+    color: #dce6df;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.article-page .article-cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.article-page .article-cta-actions .btn {
+    min-height: 44px;
+    padding: 12px 22px;
+}
+
+@media (max-width: 600px) {
+    .article-page .article-cta {
+        padding: 46px 20px;
+    }
+
+    .article-page .article-cta-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .article-page .article-cta-actions .btn {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   COMPLETE SETUP GUIDE — CONSISTENT STEPS
+   ========================================= */
+
+.article-page #desk-height,
+.article-page #monitor-position,
+.article-page #laptop-setup,
+.article-page #chair-posture,
+.article-page #diy-upgrades,
+.article-page #upgrade-priority {
+    background: #f7f8f5;
+    border-bottom: 1px solid #e8ece6;
+}
+
+.article-page #desk-height {
+    border-top: 1px solid #e8ece6;
+}
+
+.article-page #upgrade-priority {
+    border-bottom: 0;
+}
+
+
+/* =========================================
+   GUIDES PAGE — SPACING REFINEMENT
+   ========================================= */
+
+.guides-page > .hero {
+    min-height: 0;
+    padding-block: clamp(64px, 8vw, 100px);
+}
+
+.guides-page > .hero .container {
+    gap: clamp(40px, 6vw, 80px);
+}
+
+.guides-page > .article-section {
+    padding-block: clamp(48px, 6vw, 72px);
+}
+
+.guides-page > .article-section .content-container {
+    max-width: 850px;
+}
+
+.guides-page > .value-section {
+    padding-block: clamp(56px, 7vw, 88px);
+}
+
+.guides-page > .value-section .section-heading {
+    margin-bottom: 28px;
+}
+
+.guides-page .guide-grid {
+    gap: 24px;
+    align-items: stretch;
+}
+
+.guides-page .guide-card {
+    height: 100%;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .guides-page > .hero {
+        padding-block: 60px;
+    }
+
+    .guides-page > .hero .container {
+        gap: 36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .guides-page > .hero {
+        padding-block: 44px;
+    }
+
+    .guides-page > .article-section {
+        padding-block: 40px;
+    }
+
+    .guides-page > .value-section {
+        padding-block: 48px;
+    }
+
+    .guides-page > .value-section .section-heading {
+        margin-bottom: 22px;
+    }
+
+    .guides-page .guide-grid {
+        gap: 18px;
+    }
+}
+
+
+/* Gear page: upgrade order layout */
+.article-list .article-tip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 16px 20px;
+}
+
+.article-list .article-tip strong {
+    white-space: normal;
+    line-height: 1.5;
+}
+
+.article-list .article-tip p {
+    margin: 0;
+    line-height: 1.7;
+}
+
